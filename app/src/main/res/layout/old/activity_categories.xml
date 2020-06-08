@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+	                <Button
+	                    android:id="@+id/cAdd"
+	                    android:layout_width="100dp"
+	                    android:layout_height="100dp"
+	                    android:onClick="onClick"
+	                    android:text="@string/add"
+	                    android:textAppearance="?android:attr/textAppearanceLarge"
+	                    android:textSize="70sp"
+	                    style="@style/b_blue" />
+                </LinearLayout>
+
+    			<LinearLayout
+    			    android:layout_width="wrap_content"
+    			    android:layout_height="match_parent"
+    			    android:orientation="vertical"
+    			    android:layout_weight="1"
+    			    android:gravity="center" >
+	    			<Button
+	        			android:id="@+id/cSub"
+	        			android:layout_width="100dp"
+	        			android:layout_height="100dp"
+	        			android:onClick="onClick"
+	        			android:text="@string/minus"
+	        			android:textAppearance="?android:attr/textAppearanceLarge"
+	        			android:textSize="70sp"
+	                    style="@style/b_green" />	                
+    			</LinearLayout>
+    			
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+    			    android:layout_weight="1"
+    			    android:gravity="center" >
+	    			<Button
+	        			android:id="@+id/cMul"
+	        			android:layout_width="100dp"
+	        			android:layout_height="100dp"
+	        			android:onClick="onClick"
+	        			android:text="@string/times"
+	        			android:textAppearance="?android:attr/textAppearanceLarge"
+	        			android:textSize="70sp"
+	                    style="@style/b_red" />	    			
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+    			    android:layout_weight="1"
+    			    android:gravity="center" >
+	    			<Button
+	        			android:id="@+id/cDiv"
+	        			android:layout_width="100dp"
+	        			android:layout_height="100dp"
+	        			android:onClick="onClick"
+	        			android:text="@string/divide"
+	        			android:textAppearance="?android:attr/textAppearanceLarge"
+	        			android:textSize="70sp"
+	                    style="@style/b_yellow" />	    			
+                </LinearLayout>
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <ImageView
+        android:id="@+id/catFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/numbers"
+        android:src="@drawable/footer" />
+    </LinearLayout>
+
+</LinearLayout>
